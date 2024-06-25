@@ -1,4 +1,4 @@
-import fs from 'node:fs';
+import fs from 'fs';
 import { Pangu } from './core';
 
 class NodePangu extends Pangu {
