@@ -182,7 +182,4 @@ class Pangu {
   }
 }
 
-const pangu = new Pangu();
-
-export { pangu, Pangu };
-export default pangu;
+export { Pangu };

@@ -24,5 +24,6 @@ class NodePangu extends Pangu {
 
 const pangu = new NodePangu();
 
-export { pangu, NodePangu as Pangu };
-export default pangu;
+module.exports = pangu;
+module.exports.default = pangu;
+module.exports.Pangu = NodePangu;

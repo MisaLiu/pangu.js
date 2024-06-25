@@ -32,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/vinta/pangu.js/issues"
   },
-  "type": "module",
+  "type": "commonjs",
   "main": "./dist/index.js",
   "scripts": {
     "build": "vite build"

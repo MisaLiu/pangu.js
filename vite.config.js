@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, './src/index.js'),
       name: 'pangu',
-      formats: [ 'es' ],
+      formats: [ 'cjs' ],
       fileName: 'index',
     },
     rollupOptions: {
