@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const { Pangu } = require('../shared/core');
+const { Pangu } = require('./core');
 
 class NodePangu extends Pangu {
   spacingFile(path, callback = () => {}) {
