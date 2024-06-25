@@ -32,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/vinta/pangu.js/issues"
   },
-  "type": "commonjs",
+  "type": "module",
   "main": "./dist/node/index.js",
   "scripts": {
     "build:node": "npm run clear:node && babel src/node/ -d dist/node/",

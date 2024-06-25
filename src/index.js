@@ -1,6 +1,5 @@
-const fs = require('fs');
-
-const { Pangu } = require('./core');
+import fs from 'node:fs';
+import { Pangu } from './core';
 
 class NodePangu extends Pangu {
   spacingFile(path, callback = () => {}) {
@@ -25,6 +24,5 @@ class NodePangu extends Pangu {
 
 const pangu = new NodePangu();
 
-module.exports = pangu;
-module.exports.default = pangu;
-module.exports.Pangu = NodePangu;
+export { pangu, NodePangu as Pangu };
+export default pangu;
