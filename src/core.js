@@ -66,7 +66,7 @@ const RIGHT_BRACKET_AN = /([\)\]\}])([A-Za-z0-9])/g;
 const CJK_ANS = new RegExp(`([${CJK}])([A-Za-z\u0370-\u03ff0-9@\\$%\\^&\\*\\-\\+\\\\=\\|/\u00a1-\u00ff\u2150-\u218f\u2700—\u27bf])`, 'g');
 const ANS_CJK = new RegExp(`([A-Za-z\u0370-\u03ff0-9~\\$%\\^&\\*\\-\\+\\\\=\\|/!;:,\\.\\?\u00a1-\u00ff\u2150-\u218f\u2700—\u27bf])([${CJK}])`, 'g');
 
-const S_A = /(%)([A-Za-z])/g;
+const N_S_A = /([0-9]+%)([A-Za-z])/g;
 
 const MIDDLE_DOT = /([ ]*)([\u00b7\u2022\u2027])([ ]*)/g;
 
@@ -156,7 +156,7 @@ class Pangu {
     newText = newText.replace(CJK_ANS, '$1 $2');
     newText = newText.replace(ANS_CJK, '$1 $2');
 
-    newText = newText.replace(S_A, '$1 $2');
+    newText = newText.replace(N_S_A, '$1 $2');
 
     newText = newText.replace(MIDDLE_DOT, '・');
 
